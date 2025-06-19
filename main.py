@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from routes.analysis_routes import analysis_router
+from routes.brand_routes import brand_router
 from services.helpers import get_env_value
 import uvicorn
 
@@ -8,10 +9,8 @@ app = FastAPI()
 
 # Include the analysis router
 app.include_router(analysis_router, prefix="/analyze", tags=["Content Analysis"])
+app.include_router(brand_router, prefix="/brand", tags=["Brand"])
 
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
 
 # Main entry point for the app, running via Uvicorn if __name__ == "__main__"
 if __name__ == "__main__":

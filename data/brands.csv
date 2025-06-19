@@ -1,0 +1,8 @@
+id,brand_name,total_asset_value,aro,document
+1,Wepay,2000000,0.25,wepay_security.pdf
+2,Fintrack,3500000,0.4,fintrack_risk_report.pdf
+3,MediSecure,1800000,0.3,medisecure_iso_review.pdf
+4,RetailSphere,1500000,0.2,retailsphere_audit.pdf
+5,EduTrust,1200000,0.15,edutrust_policy_eval.pdf
+6,LogiChain,2800000,0.35,logichain_framework_report.pdf
+7,DataHive,3000000,0.5,datahive_cyber_overview.pdf

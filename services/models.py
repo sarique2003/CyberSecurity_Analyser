@@ -89,6 +89,11 @@ class FrameworkReport(BaseModel):
     }
 
 
+class CyberRiskEstimate(BaseModel):
+    residual_risk_percent: float = Field(..., description="Remaining risk after compliance, as a percentage")
+    monetary_risk_exposure: float = Field(..., description="Total dollar value of risk exposure")
+    estimated_annualized_loss: float = Field(..., description="Estimated annualized loss expectancy (ALE)")
+
 # Example usage
 compliance_data = {
     "CSA": {

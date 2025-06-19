@@ -51,7 +51,7 @@ class AnalysisService:
 
         return extracted_text
 
-    async def assign_numerical_score(self, analysed_system_compliance: SystemCompliance):
+    async def assign_main_category_score(self, analysed_system_compliance: SystemCompliance):
         compliant_count = sum(
             1 for section in
             [analysed_system_compliance.CSA, analysed_system_compliance.NIST, analysed_system_compliance.ISO_27001]
@@ -81,16 +81,13 @@ class AnalysisService:
             ai_response_text: str = ai_response.strip("```json").strip("```")
             json_response: dict = json.loads(ai_response_text, strict=False)
             system_compliance_response: SystemCompliance = SystemCompliance(**json_response)
-            return await self.assign_numerical_score(system_compliance_response)
+            return await self.assign_main_category_score(system_compliance_response)
 
         except Exception as e:
             return {"error": f"Error reading PDF or template: {str(e)}"}
 
     async def extract_framework_details(self, main_framework: str, sub_category: Optional[str] = None) -> pd.DataFrame:
-        with open('/Users/mohdsarique/Documents/Cyber_risk/pythonProject/data/cleaned_file.csv', "r", encoding="utf-8") as file:
-            extracted_text = file.read()
-
-        df_combined = pd.read_csv('/Users/mohdsarique/Documents/Cyber_risk/pythonProject/data/cleaned_file.csv')
+        df_combined = pd.read_csv('/Users/mohdsarique/Documents/Cyber_risk/pythonProject/data/frameworks.csv')
         normalized_framework = main_framework.value.strip().upper()
         filtered_df = df_combined[
             df_combined["Framework"].astype(str).str.strip().str.upper() == normalized_framework
