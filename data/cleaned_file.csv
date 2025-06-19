@@ -1,0 +1,79 @@
+Control Number,Control Title,Purpose,Control Type,Main Category,Framework
+5.1,Information Security Policy,To provide management direction and support for information security,Preventive,5,ISO_27001
+5.2,Information Security Roles and Responsibilities,To ensure information security responsibilities are assigned and understood,Preventive,5,ISO_27001
+5.3,Segregation of Duties,To reduce opportunities for unauthorized or unintentional modification or misuse of information,Preventive,5,ISO_27001
+5.4,Management Responsibilities,To ensure management commitment and support for information security,Preventive,5,ISO_27001
+5.5,Information Security in Project Management,To ensure that information security is incorporated into the organization's project management processes,Preventive,5,ISO_27001
+5.6,Risk Management,To manage information security risks effectively and ensure that they are treated appropriately,Preventive,5,ISO_27001
+5.7,Compliance with Legal and Regulatory Requirements,"To ensure that the organization complies with relevant laws, regulations, and contractual obligations",Preventive,5,ISO_27001
+5.8,Information Security Objectives,To set measurable information security goals,Preventive,5,ISO_27001
+6.1,Screening,"To minimize the risk of theft, fraud, or misuse of information processing facilities",Preventive,6,ISO_27001
+6.2,Terms and Conditions of Employment,To ensure employees understand their information security responsibilities,Preventive,6,ISO_27001
+6.3,"Information Security Awareness, Education and Training",To ensure personnel are aware of information security threats and their responsibilities,Preventive,6,ISO_27001
+6.4,Disciplinary Process,To ensure that breaches of information security policies are addressed appropriately,Corrective,6,ISO_27001
+6.5,Contact with Authorities,To facilitate communication with authorities regarding information security incidents,Corrective,6,ISO_27001
+6.6,Information Security in Supplier Relationships,To manage third-party risk and ensure information security is maintained,Preventive,6,ISO_27001
+6.7,Information Security in Service Provider Relationships,To ensure service providers meet information security standards,Preventive,6,ISO_27001
+6.8,Management of Human Resources Security,To protect information security through effective human resources practices,Preventive,6,ISO_27001
+7.1,Physical Security Perimeter,"To prevent unauthorized physical access, damage and interference to information and information processing facilities",Preventive,7,ISO_27001
+7.2,Physical Entry,To prevent unauthorized access to secure areas,Preventive,7,ISO_27001
+7.3,Monitoring Physical Access,To detect and respond to unauthorized physical access attempts,Detective,7,ISO_27001
+7.4,Physical Protection from Environmental Threats,"To protect information assets from environmental risks (e.g., fire, flooding, power failure)",Preventive,7,ISO_27001
+7.5,Physical Security in Working Areas,To ensure that workspaces remain secure from unauthorized access,Preventive,7,ISO_27001
+7.6,Secure Disposal or Reuse of Equipment,To ensure that sensitive information is not leaked through improper disposal or reuse of equipment,Preventive,7,ISO_27001
+7.7,Equipment Maintenance,To maintain operational integrity and minimize vulnerabilities,Preventive,7,ISO_27001
+7.8,Security of Physical Storage Media,To prevent unauthorized access to physical media containing sensitive data,Preventive,7,ISO_27001
+7.9,Visitor Control,To ensure visitor access is controlled to prevent unauthorized access,Preventive,7,ISO_27001
+8.1,User Endpoint Devices,To ensure the protection of information on user endpoint devices,Preventive,8,ISO_27001
+8.2,Privileged Access Rights,To prevent unauthorized access by controlling privileged access rights,Preventive,8,ISO_27001
+8.3,Access Control for Applications,To ensure that only authorized individuals can access applications and application data,Preventive,8,ISO_27001
+8.4,Encryption,To protect the confidentiality of sensitive information during storage and transmission,Preventive,8,ISO_27001
+8.5,Malware Protection,To protect information systems from malicious software,Detective,8,ISO_27001
+8.6,Application Security,To reduce the risk of vulnerabilities in software applications,Preventive,8,ISO_27001
+8.7,"System Acquisition, Development, and Maintenance","To ensure security in the acquisition, development, and maintenance of information systems",Preventive,8,ISO_27001
+8.8,Backup and Recovery,To protect against data loss and ensure information can be restored,Preventive,8,ISO_27001
+A.1,Identity and Access Management (IAM),To ensure that only authorized individuals can access the cloud resources.,Preventive,A,CSA
+A.1.1,User Identity Management,To ensure that user identities are properly managed to grant the appropriate access.,Preventive,A,CSA
+A.1.2,Access Authorization,To ensure users have the proper access permissions based on their roles.,Preventive,A,CSA
+A.2,User Authentication,To verify user identities and ensure only authorized access.,Preventive,A,CSA
+A.2.1,Multi-Factor Authentication (MFA),To enhance authentication security by requiring multiple forms of verification.,Preventive,A,CSA
+A.2.2,Password Management,To ensure secure password policies are enforced.,Preventive,A,CSA
+B.1,Application Development Lifecycle,To reduce vulnerabilities and improve the security posture of applications.,Preventive,B,CSA
+B.1.1,Secure Code Reviews,To identify security issues early and mitigate risks.,Detective,B,CSA
+B.1.2,Development Environment Security,To ensure the development environment is protected from security threats.,Preventive,B,CSA
+B.2,Application Security Testing,To identify and mitigate potential security risks before deployment.,Detective,B,CSA
+B.2.1,Static Application Security Testing (SAST),To detect vulnerabilities in the application's source code.,Detective,B,CSA
+B.2.2,Dynamic Application Security Testing (DAST),To detect vulnerabilities in the application while running.,Detective,B,CSA
+C.1,Incident Response Plan,To ensure a coordinated and effective response to security incidents.,Corrective,C,CSA
+C.1.1,Incident Reporting Procedure,To ensure that incidents are promptly reported and documented.,Preventive,C,CSA
+C.1.2,Incident Response Team,To ensure a coordinated response to security incidents.,Corrective,C,CSA
+C.2,Incident Detection and Monitoring,To promptly identify and mitigate security threats.,Detective,C,CSA
+C.2.1,Security Information and Event Management (SIEM),To detect and respond to security incidents in real-time.,Detective,C,CSA
+C.2.2,Intrusion Detection Systems (IDS),To detect and respond to unauthorized access or attacks.,Detective,C,CSA
+ID.AM-1,Asset Management,To identify all assets that need to be protected.,Preventive,ID.AM,NIST
+ID.AM-1.1,Asset Inventory,To maintain a complete and accurate inventory of assets.,Preventive,ID.AM,NIST
+ID.AM-1.2,Asset Lifecycle Management,To ensure assets are properly managed through their lifecycle.,Detective,ID.AM,NIST
+ID.BE-1,Business Environment,To identify business requirements that impact security objectives.,Detective,ID.BE,NIST
+ID.BE-1.1,Business Impact Analysis,To identify how the organization's assets and operations impact overall business objectives.,Preventive,ID.BE,NIST
+PR.AC-1,Access Control,To prevent unauthorized access to critical resources.,Preventive,PR.AC,NIST
+PR.AC-1.1,User Access Management,To ensure that user access is properly managed.,Preventive,PR.AC,NIST
+PR.AC-1.2,Access Control Policy,To define and enforce policies governing access control across systems.,Preventive,PR.AC,NIST
+PR.DS-1,Data Security,To ensure the confidentiality and integrity of sensitive data.,Preventive,PR.DS,NIST
+PR.DS-1.1,Data Classification,To ensure data is handled appropriately based on its classification.,Preventive,PR.DS,NIST
+DE.CM-1,Continuous Monitoring,To identify and respond to security events as quickly as possible.,Detective,DE.CM,NIST
+DE.CM-1.1,Real-time Monitoring,To ensure timely detection of security threats.,Detective,DE.CM,NIST
+DE.CM-1.2,Event Logging,To ensure that security events are logged for later analysis.,Detective,DE.CM,NIST
+DE.DP-1,Data Protection,To prevent unauthorized data access and maintain security.,Detective,DE.DP,NIST
+DE.DP-1.1,Data Usage Monitoring,To protect data from unauthorized access.,Detective,DE.DP,NIST
+RS.RP-1,Incident Response Planning,To ensure that incidents are handled promptly and appropriately.,Corrective,RS.RP,NIST
+RS.RP-1.1,Incident Classification,To ensure incidents are appropriately categorized for effective response.,Corrective,RS.RP,NIST
+RS.CO-1,Communication during Incident,To ensure proper communication during a security incident.,Corrective,RS.CO,NIST
+RS.CO-1.1,Incident Reporting,To ensure that incidents are communicated to the appropriate stakeholders.,Corrective,RS.CO,NIST
+RC.RP-1,Recovery Planning,To ensure that the organization can recover from incidents and maintain business continuity.,Corrective,RC.RP,NIST
+RC.RP-1.1,Business Continuity Planning,To minimize downtime and business impact during an incident.,Corrective,RC.RP,NIST
+RC.IM-1,Improvement,To ensure continuous improvement in the organization’s recovery capabilities.,Corrective,RC.IM,NIST
+RC.IM-1.1,Post-Incident Review,To ensure that lessons are learned and integrated into future responses.,Corrective,RC.IM,NIST
+AC-1,Access Control Policy and Procedures,To ensure that access control policies are established and enforced.,Preventive,AC,NIST
+AC-1.1,Access Control Implementation,To ensure that access control policies are consistently enforced.,Preventive,AC,NIST
+AU-2,Audit Events,To ensure that events are monitored for security analysis.,Detective,AU,NIST
+AU-2.1,Event Collection,To ensure that relevant security events are captured.,Detective,AU,NIST
