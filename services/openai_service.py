@@ -17,7 +17,7 @@ class OpenAIService:
                                      presence_penalty=0,
                                      frequency_penalty=0)
 
-    async def make_llm_call(self, prompt: str):
+    async def make_llm_call(self, prompt: str) -> str:
         messages = [SystemMessage(content=prompt)]
         response = await self.model.ainvoke(messages)
         parsed_response = response.content.strip()
